@@ -11,7 +11,7 @@ export class LognComponent {
   constructor(public chatService: ChatService) { }
 
   ingresar(proveedor: string) {
-    console.log(proveedor);
+    // console.log(proveedor);
     this.chatService.login(proveedor);
   }
 

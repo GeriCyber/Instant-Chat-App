@@ -1,6 +1,9 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+}
 .main-container{
-  margin-top: 40px;
-  margin-bottom: 150px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .puntero{
@@ -9,19 +12,20 @@
 
 
 .chat-window{
-  padding: 10px;
-  width: 300px;
-  height: 400px;
+  /* padding: 10px; */
+  /* width: 300px;
+  height: 400px; */
   overflow: hidden;
-  border: 1px solid #4080FF;
-  border-radius: 20px;
+  width: auto;
+  /* border: 1px solid #4080FF; */
+  /* border-radius: 20px; */
 }
 
 .app-mensajes{
   overflow-y:scroll;
   height:270px;
   /*background:gray;*/
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 
@@ -52,4 +56,33 @@
 
 .fadeIn {
   animation-name: fadeIn;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5850c0;
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5850c0;
+}
+
+.copy-text {
+  font-size: 12px;
+}
+.copy-text a, .copy-text a:hover {
+  text-decoration: none;
+  color: aqua;
 }

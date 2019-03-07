@@ -31,7 +31,7 @@ export class ChatsComponent implements OnInit {
     }
     this.chatService.agregarMensaje(this.mensaje)
     .then(() => {
-      console.log('Mensaje enviado!');
+      // console.log('Mensaje enviado!');
       this.mensaje = '';
     })
     .catch((err) => {

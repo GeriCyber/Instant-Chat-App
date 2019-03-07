@@ -5,11 +5,15 @@
 </ul> -->
 
 <div class="container main-container">
-    <h1>FireChat</h1>
-    <div class="col-md-12 text-right" *ngIf="chatService.usuario.uid">
-        <button (click)="chatService.logout()" type="button" class="btn btn-dark">Salir</button>
+    <div class="row">
+      <div class="col-md-6 text-left">
+        <h1>Chatfy</h1>
+      </div>
+      <div class="col-md-6 text-right mt-1" *ngIf="chatService.usuario.uid">
+          <button (click)="chatService.logout()" type="button" class="btn btn-danger">Salir</button>
+      </div>
     </div>
-
+    <hr>
     <app-logn *ngIf="!chatService.usuario.uid"></app-logn>
 
     <div class="chat-window" *ngIf="chatService.usuario.uid">
